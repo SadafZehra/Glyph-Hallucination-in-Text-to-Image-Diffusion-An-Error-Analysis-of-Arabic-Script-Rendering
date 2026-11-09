@@ -1,10 +1,5 @@
 # Glyph Hallucination in Text-to-Image Diffusion: An Error Analysis of Arabic Script Rendering
 
-**Notebook:** `Arabic_Glyph_Hallucination.ipynb` (Google Colab, T4 GPU, about 60 to 90 minutes)
-**Base model:** Stable Diffusion 1.5 · **OCR:** EasyOCR (Arabic) · **Adaptation:** LoRA
-
----
-
 ## 1. Research question
 
 When Stable Diffusion is asked to draw an Arabic word, how often does it write the correct letters, and what kinds of mistakes does it make?
@@ -65,8 +60,3 @@ Reading: the model essentially never writes a correct Arabic word. It tends to *
 
 
 
-4. Separate analysis of ligatures and diacritics.
-
-## 10. Requirements
-
-`kagglehub`, `diffusers`, `transformers`, `accelerate`, `peft`, `easyocr`, `arabic-reshaper`, `python-bidi`, PyTorch, pandas, matplotlib. The notebook installs them in its first cell.
